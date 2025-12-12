@@ -125,3 +125,28 @@ If you would like to see a demo of the training results, navigate to the `/demos
 The gifs that end with generalize show the results of a PPO model trained on level 1-1, and then generalized to see how well they perform on slightly similar levels (2-1, 3-1, 4-1). 
 
 The other videos show the performances of both the baseline and curriculum agents on levels 1-1 and 1-2.
+
+### Models
+In the /models directory, we saved a list of pre-loaded models that were used for different training runs. By plugging in a model name for Section 18 (Load Model) in either the baseline or curriculum notebook, you can evaluate and visualize the results of an individual model.
+
+Just replace this line: `model_path = "models/ppo_baseline_1-1/best_model"` with the name of the model such as:
+
+`models/ppo_baseline_1-2/best_model`
+
+`ppo_baseline_1-1`: Baseline model trained on level 1-1
+
+`ppo_baseline_1-2`: Baseline model trained on level 1-2
+
+`ppo_curriculum_1-1`: Curriculum model with both incremental rewards and actions trained on level 1-1
+
+`ppo_curriculum_1-2`: Curriculum model with both incremental rewards and actions trained on level 1-2
+
+`ppo_curriculum_2`: Curriculum model with ONLY incremental reward function
+
+`ppo_curriculum_3`: Curriculum model with ONLY incremental reward function (different ordering from #2)
+
+`ppo_curriculum_4`: Curriculum model with ONLY incremental reward function (different ordering from #3)
+
+`ppo_curriculum_5`: Curriculum model with ONLY incremental action space
+
+`ppo_curriculum_7`: Curriculum model with both incremental rewards and actions trained on level 1-1
