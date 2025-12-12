@@ -1,0 +1,20 @@
+{
+  "ENV_NAME": "SuperMarioBros-1-2-v0",
+  "ACTION_SPACE": "[['NOOP'], ['right'], ['right', 'A'], ['right', 'B'], ['right', 'A', 'B'], ['A'], ['left'], ['left', 'A'], ['left', 'B'], ['left', 'A', 'B'], ['down'], ['up']]",
+  "FRAME_SKIP": 4,
+  "FRAME_STACK": 4,
+  "RESIZE_SHAPE": [
+    84,
+    84
+  ],
+  "LEARNING_RATE": 0.00025,
+  "N_STEPS": 128,
+  "BATCH_SIZE": 256,
+  "N_EPOCHS": 4,
+  "GAMMA": 0.99,
+  "GAE_LAMBDA": 0.95,
+  "CLIP_RANGE": 0.1,
+  "ENT_COEF": 0.02,
+  "TOTAL_TIMESTEPS": 1000000,
+  "N_ENVS": 8
+}
