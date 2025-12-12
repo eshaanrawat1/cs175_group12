@@ -74,7 +74,7 @@ As a result, our group has pre-loaded models which can be used for visualizing o
 
 If you run cell 11B (full training), you can see periodic heartbeats that track the mean reward, among other steps. The format looks like this: 
 ```
-Heartbeat] 9,200/1,000,000 steps (0.9%) | Elapsed: 0h01m00s | Speed: 153 steps/s | ETA: 1h47m
+[Heartbeat] 9,200/1,000,000 steps (0.9%) | Elapsed: 0h01m00s | Speed: 153 steps/s | ETA: 1h47m
 ------------------------------------------
 | rollout/                |              |
 |    ep_len_mean          | 298          |
@@ -129,9 +129,7 @@ The other videos show the performances of both the baseline and curriculum agent
 ### Models
 In the /models directory, we saved a list of pre-loaded models that were used for different training runs. By plugging in a model name for Section 18 (Load Model) in either the baseline or curriculum notebook, you can evaluate and visualize the results of an individual model.
 
-Just replace this line: `model_path = "models/ppo_baseline_1-1/best_model"` with the name of the model such as:
-
-`models/ppo_baseline_1-2/best_model`
+Just replace this line: `model_path = "models/ppo_baseline_1-1/best_model"` with the name of the model such as: `models/ppo_baseline_1-2/best_model`
 
 `ppo_baseline_1-1`: Baseline model trained on level 1-1
 
