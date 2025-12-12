@@ -30,8 +30,9 @@ cd cs175_group12
 Create a new conda environment with Python 3.10:
 
 ```
-conda create --name mario_rl --file requirements.txt
+conda create -n mario_rl python=3.10
 conda activate mario_rl
+pip install -r requirements.txt
 ```
 
 This will automatically install all reuqired dependencies for the project.
